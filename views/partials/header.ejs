@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Freight Booking</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="body.css">
+  
+<body >
+  <header>
+    <nav>
+      <div class="title">
+
+        <h3> Freight Booking Site</h3>
+        <!-- <img src="imgs/icon.png" alt="" class="icon"> -->
+      </div>
+      <div class="navigate">
+        <ul>
+          <input type="hidden" value="">
+          <span id="flag"><%=flag%></span>
+          <li class="li-items" id="home"><a href="/">Home</a></li>
+          <li class="li-items" id="about"><a href="/about">About Us</a></li>
+          <li class="li-items" id="profile"><a href="/profile">Profile</a></li>
+          <li class="li-items" id="booking"><a href="/booking">Booking</a></li>
+          
+          <li class="li-items" id="login"><a href="/login">Login</a></li>
+          <li class="li-items" id="logout"><a href="/logout">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <script>
+    let flag = document.getElementById("flag").innerText;
+    if (flag == 1) {
+      document.getElementById("login").style.display = "none";
+      
+    } else {
+      document.getElementById("logout").style.display = "none";
+      document.getElementById("profile").style.display = "none";
+      document.getElementById("booking").style.display = "none";
+    }
+  </script>
+<!-- <li id="home"><a href="/">Home</a></li> -->
+<!-- <li id="logout"><a href="/logout">Logout</a></li> -->

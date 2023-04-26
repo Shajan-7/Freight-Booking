@@ -1,0 +1,47 @@
+<!-- Booking page - 2 -->
+<!-- Do Styling 1-->
+
+<%- include("partials/header"); -%>
+    <link rel="stylesheet" href="available.css">
+    <section class="available">
+        <h2>Available Trucks</h2>
+        <% if (docs.length> 0) { %>
+            <% docs.forEach(function(docs2) { %>
+                <div class="container">
+                    <div class="set">
+                        <div class="item">
+                             <%= docs2.truckname %>
+                        </div>
+                        <div class="item">
+                            <%= docs2.currentlocation %>
+                        </div>
+                        <div class="item">
+                            Priced at
+                            <%= docs2.price %>
+                                <%= docs2.ptype %>
+                        </div>
+                        <div class="item">
+                            <form action="/details" method="post">
+                                <input type="hidden" name="id" value="<%= docs2._id %>" />
+                                <input type="hidden" name="truckno" value="<%= docs2.truckno %>" />
+                                <input type="hidden" name="truckname" value="<%= docs2.truckname %>" />
+                                <input type="hidden" name="currentloaction" value="<%= docs2.currentlocation %>" />
+                                <input type="hidden" name="price" value="<%= docs2.price %>" />
+                                <input type="hidden" name="ptype" value="<%= docs2.ptype %>" />
+                                <input type="hidden" name="tphone" value="<%= docs2.tphone %>" />
+                                <input type="hidden" name="drname" value="<%= docs2.drname %>" />
+                                <input type="hidden" name="drphone" value="<%= docs2.drphone %>" />
+                                <button type="submit">Book</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <% }); %>
+                    </div>
+                    <% } else { %>
+                        <div class="container"><p> No Trucks found for your Goods!</p>
+                             </div>
+                        <% } %>
+    </section>
+
+    <%- include("partials/footer"); -%>

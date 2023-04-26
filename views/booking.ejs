@@ -1,0 +1,57 @@
+<!-- Booking page 1 -->
+<!-- Completed -->
+
+<%- include("partials/header"); -%>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="booking.css">
+    <section class="booking">
+        <div class="booking-page">
+            <h5 class="booking-warn">
+                <%= mess1%>
+            </h5>
+            <h2>Truck Booking</h2>
+            <form method="post" action="/available-trucks" id="form">
+                <div class="booking-form">
+                    <div class="booking-item item1">
+                        <label>Pickup Location</label>
+                        <select name="pickup" id="pickup">
+                            <option value="Chennai">Chennai</option>
+                            <option value="Tirunelveli">Tirunelveli</option>
+                            <option value="Salem">Salem</option>
+                            <option value="Madurai">Madurai</option>
+                            <option value="Tenkasi">Tenkasi</option>
+                            <option value="Kanyakumari">Kanyakumari</option>
+                        </select>
+                    </div>
+                    <div class="booking-item item2">  
+                        <label for="drop">Drop Location</label>
+                        <select name="drop" id="drop">
+                            <option value="Chennai">Chennai</option>
+                            <option value="Trichy">Trichy</option>
+                            <option value="Salem">Salem</option>
+                            <option value="Madurai">Madurai</option>
+                            <option value="Tenkasi">Tenkasi</option>
+                            <option value="Kanyakumari">Kanyakumari</option>
+                        </select>
+                    </div>
+                    <div class="booking-item item3">
+                        <label>Pickup Date </label>
+                        <input type="date" name="date" id="dateInput" required />
+                    </div>
+                    <div class="booking-item item4">
+                        <label>Cargo Weight (Ton) </label>
+                        <input type="number" name="ton" required min="5" max="20"/>
+                    </div>
+                    <div class="booking-item item5">
+                        <input type="submit" value="Search" onClick="check()"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script>
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('dateInput').setAttribute('min', today);
+    </script>
+    <%- include("partials/footer"); -%>
+        

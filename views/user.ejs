@@ -1,0 +1,48 @@
+<!-- The Real Profile Page -->
+<!-- Do Styling 2 -->
+
+<%- include("partials/header"); -%>
+<link rel="stylesheet" href="user.css">
+  <section class="user">
+    <div class="user-top">
+
+
+    <h5>Welcome</h5>
+    <h2>
+      <%= docs.name%>
+    </h2>
+        </div>
+    <h3>Your Bookings</h3>
+    <div class="holder">
+    <% if (bookings.length> 0) { %>
+      <% bookings.forEach(function(booking) { %>
+        <div class="set">
+          <div class="data special">
+           <%= booking.truckname %>
+          </div>
+          <div class="data">
+             <span class="space">From</span><%= booking.pickup %>
+          </div>
+          <div class="data">
+              <span class="space">To</span><%= booking.drop %>
+          </div>
+          <div class="data none">
+            <span class="space">Date</span><%= booking.pickupdate.toISOString().substr(0, 10) %></span>
+          </div>
+          <div class="data special">
+            <form action="/billing" method="post">
+              <input type="hidden" name="_id" value="<%= booking._id %>">
+              <button type="submit">View Bill</button>
+            </form>
+          </div>
+        </div>
+        <% }); %>
+          <% } else { %>
+            <div class="set nill">
+              <p>No previous bookings found.</p>
+            </div>
+          </div>
+            
+            <% } %>
+  </section>
+  <%- include("partials/footer"); -%>

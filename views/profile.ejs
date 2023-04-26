@@ -1,0 +1,97 @@
+<!-- Admin Editor  -->
+<!-- Last Importance -->
+
+<%- include("partials/header1"); -%>
+    <link rel="stylesheet" href="admin.css">
+    <section class="admin">
+        <h2>
+            Administrator
+        </h2>
+        <div class="table">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Truck number</th>
+                        <th>Truck name</th>
+                        <th>Location</th>
+                        <th>Price Type</th>
+                        <!-- <th>Type</th> -->
+                        <th>Status</th>
+                        <th>Driver Name</th>
+                        <th>Driver Number</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% docs1.forEach(function(docs2) { %>
+                        <tr>
+                            <form action="/update" method="post">
+                                <input type="hidden" name="id" value="<%= docs2._id %>" />
+                                <td>
+                                    <input type="text" name="truckno" value="<%= docs2.truckno %>" />
+                                </td>
+                                <td>
+                                    <input type="text" name="truckname" value="<%= docs2.truckname %>" />
+                                </td>
+                                <td>
+                                    <input type="text" name="location" value="<%= docs2.currentlocation %>" />
+                                </td>
+                                <td>
+                                    <input type="number" name="price" value="<%= docs2.price %>" />
+                                    <select name="ptype" id="price">
+                                        <option value="per ton">Per ton</option>
+                                        <option value="per km">Per km</option>
+                                    </select>
+                                </td>
+                                <input type="hidden" name="tphone" value="9988776655" />
+                                <td><input type="text" name="status" value="<%= docs2.status %>" /></td>
+                                <td><input type="text" name="drname" value="<%= docs2.drname %>" /></td>
+                                <td><input type="number" name="drphone" value="<%= docs2.drphone %>" /></td>
+                                <td><button type="submit" class="dupe">Update</button></td>
+                            </form>
+                            <% }); %>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="adder">
+            <form class="add-truck hidden" action="/add" method="post">
+                <div>
+                    <label>Truck Name:</label>
+                    <input type="text" name="truckname" value="" required />
+                </div>
+                <div>
+                    <label>Truck Number:</label>
+                    <input type="text" name="truckno" value="" required />
+                </div>
+                <div>
+                    <label>Current Location:</label>
+                    <input type="text" name="location" value="" required />
+                </div>
+                <div>
+                    <label>Price:</label>
+                    <input type="number" name="price" value="" required />
+                </div>
+                <div>
+                    <label>Price type:</label>
+                    <select name="ptype" id="price">
+                        <option value="per ton">Per ton</option>
+                        <option value="per km">Per km</option>
+                    </select>
+                </div>
+                <input type="hidden" name="tphone" value="934857166" />
+                <div>
+                    <label>Driver Name:</label>
+                    <input type="text" name="drname" value="" required />
+                </div>
+                <div>
+                    <label>Driver No:</label>
+                    <input type="text" name="drphone" value="" required />
+                </div>
+                <button type="submit" class="button">Add</button>
+            </form>
+        </div>
+    </section>
+
+    <%- include("partials/footer"); -%>

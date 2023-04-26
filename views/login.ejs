@@ -1,0 +1,31 @@
+<!-- Login Page -->
+<!-- Completed -->
+
+<%- include("partials/header"); -%>
+    <link rel="stylesheet" href="login.css">
+    <section class="login">
+        <div class="login-page">
+            <h4 class="login-alert">
+                <%= mess%>
+            </h4>
+            <h2>Login
+
+            </h2>
+            <form method="post" action="/login">
+                <div>
+                    <label for="username">Username :</label>
+                    <input type="text" name="username" />
+                </div>
+                <div>
+                    <label for="password">Password :</label>
+                    <input type="password" name="password" />
+                </div>
+                <div>
+                    <input type="submit" value="Login" />
+                </div>
+            </form>
+            <p>Need an account?</p>
+            <a href="signup"><button>Signup</button> </a>
+        </div>
+    </section>
+    <%- include("partials/footer"); -%>

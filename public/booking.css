@@ -1,0 +1,88 @@
+.booking{
+    background-image: url("imgs/booking-bg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.booking .booking-warn{
+    color:darkred;
+    text-decoration: underline;
+    font-size:1.3rem;
+    text-align: center;
+}
+.booking-page{  
+    background-color: rgba(255, 255, 255, 0.855);
+    border-radius: 24px;
+    margin:3%;
+    padding:3%;
+    width:45vw;
+}
+.booking h2{
+    font-family:Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color:darkgreen;
+    padding: 20px 5px;
+    margin: 10px;
+    text-align: center;
+}
+.booking-form {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+}
+.booking-item {
+    display: flex;
+    justify-content: flex-end;
+    margin: 12px;
+    padding: 12px;
+}
+.booking label{
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-weight: 400;;
+    font-size: 1.4rem;
+    color: green;
+    margin:4px;
+    padding: 5px;   
+}
+.booking input{
+    border: 1px solid lightgreen;
+    color:grey;
+    background-color: white;
+    border-radius: 6px;    
+}
+.booking input[type="date"]{
+    width:160px;
+    padding:12px 12px; 
+}
+.booking input[type="number"]{
+    width:84px;
+    padding:12px 12px; 
+}
+.booking select{
+    background-color: white;
+    color:grey;
+    font-size: 1rem;
+    padding:0% 15px;
+    border: 1px solid lightgreen;
+    border-radius: 6px;
+}
+.booking input[type="submit"]{
+    text-align: center;
+    border: 2px solid darkgreen;
+    margin:8px;
+    padding:12px 18px;
+    background-color: darkgreen;
+    font-size: 1em;
+    color:white; 
+}
+.booking input[type="submit"]:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition:  0.4s ;
+}
+footer{
+    position: static;
+    /* margin-bottom: 0 auto; */
+    border-bottom: 1px solid rgb(37, 37, 37);
+}

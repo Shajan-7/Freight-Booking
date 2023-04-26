@@ -1,0 +1,32 @@
+body{
+    margin:0 auto;
+    height: 100%;
+    scroll-behavior:smooth;
+}
+.login,.about,.profile,.booking,.about,.available,.user,.details,.admin,.home{
+    margin-top: 10vh;
+    min-height: 82vh;
+}
+/*remover code*/
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+a:active{
+    color:black;
+}
+input:active{
+    border:none;
+}
+input:focus {
+  outline: none;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition:  0.3s ;
+}

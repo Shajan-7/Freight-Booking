@@ -1,0 +1,56 @@
+/* Default css remover code  */
+header .li-items a {
+    text-decoration: none;
+    color:black;
+}
+
+header ul{
+    list-style:none;
+}
+header h3{
+    display: inline;
+    justify-content: center;
+    align-content:center;
+}
+
+/* End of Remocer code  */
+
+header{   
+    position: fixed; 
+    top:0;
+    left:0; 
+    z-index: 10;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(103, 103, 201);;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(255, 255, 255);
+    background-color:rgb(37, 37, 37);  
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header .li-items{
+    display: inline;
+    margin: 4px;
+    padding: 4px;
+    text-align: center;
+    line-height: 30px;;
+}
+header .li-items a {
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+header .title{
+    display: inline;
+    margin-left:1%;
+    font-size: 1.1em;
+    text-align: center;
+    margin:1.5%;
+}
+#flag{
+    display: none;
+}

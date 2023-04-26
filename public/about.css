@@ -1,0 +1,50 @@
+
+.about{
+    background-image: url("imgs/about-bg.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100vw;
+}
+.about-page1{
+   text-align: center;
+    width:45vw;
+    padding:2.5%;
+    padding-right: 5%;
+    border-right: 1px solid darkgoldenrod;  
+    background-color: rgba(255, 255, 255, 0.504);  
+}
+.about-page2{
+    text-align: center; 
+    width:45vw;
+    padding:3%;
+    background-color: rgba(255, 255, 255, 0.503); 
+}
+.about-page1 h2,.about-page2 h2{
+    color:rgb(27, 62, 108);
+    font-weight: 900;
+    font-size: 40px;
+    margin:12px;
+}
+.about-page1 p,.about-page2 p{
+    width:40vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin:12px;
+    line-height: 21px;
+
+    
+}
+.about-page2 div {
+    margin:12px;
+}
+.about-page2 p{
+    line-height: 24px;
+}
+.about-page2 h5{
+    color:rgb(27, 62, 108);
+}
+footer{
+    position: relative;
+    border-bottom: 1px solid #0f0f0f;
+}

@@ -1,0 +1,91 @@
+.signup{
+    background-image: url('imgs/signup-bg.jpg');
+    background-size: cover;
+    background-position: right;
+    margin:0 auto;
+    background-repeat: no-repeat;
+    margin-top: 10vh;
+    min-height: 90vh;
+    display: flex;
+    justify-content: flex-end;
+}
+.signup-page{ 
+    justify-content: flex-end;
+    text-align: right;
+    height: 100%;
+    padding: 16px;
+    width:45vw;
+    background-color: rgba(255, 255, 255, 0.906);
+    font-family:'Times New Roman', Times, serif;
+    color:orangered;   
+}
+.signup-alert {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 1rem 1.5rem;
+  color: #c70000;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  text-align: center;
+}.signup-center{
+    text-align: center;
+}
+.signup h2{
+    font-size: 2rem;
+    margin-top:2%;
+    margin-bottom: 7%;
+}
+.signup label{
+    font-size: 1.4rem;
+    margin-right:9px;
+    color:darkorange;
+    /* margin-bottom: 5%; */
+}
+.signup input{
+    padding: 6px 12px;
+    font-size:1.2rem;
+    border-radius: 4px;
+    margin-bottom: 5%;
+    margin-right:14%;
+    border:none;
+    border-bottom: 2px solid orange; 
+    background-color: transparent;
+    color:darkorange;
+}
+.signup input[type="submit"]{
+    background-color: darkorange;
+    color:rgb(255, 255, 255);
+    font-size: 1rem;;
+    padding: 12px 36px;
+    margin-bottom: 4%;
+    font-weight: bolder;
+    margin-right:0;
+}
+.signup p{
+    font-size: 1.2rem;
+    margin-bottom: 6%;
+    color:darkorange;
+}
+.signup a button{
+    border: 1px solid darkorange;
+    background-color: transparent;
+    border-radius: 4px;
+    font-size: 1rem;;
+    padding: 12px 36px;
+    font-weight: bolder;
+    color:darkorange;
+}
+.signup input[type="submit"]:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition:  0.4s ;
+}
+.signup a button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition:  0.3s ;
+}
+footer{
+    position: relative;
+    border-bottom: 1px solid rgb(37, 37, 37);
+}
+

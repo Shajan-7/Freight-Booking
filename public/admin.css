@@ -1,0 +1,89 @@
+.admin{
+    background-image: url("imgs/admin-bg.jpg");
+    background-size: cover;
+    padding:5% 2.5%;
+    color:white;
+}
+.admin table input,.admin table select{
+    width:110px;
+    padding:4px;
+}
+
+.admin h2{
+color:white;
+font-size: 2rem;;
+margin-bottom: 3%;;
+text-align: center;
+}
+.admin .table{
+    width:80vw;
+    margin:2.5% auto;
+}
+.admin .adder{
+    width:55vw;
+    margin:2.5%;
+}
+
+.admin table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.admin th,.admin  td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.admin table th {
+  background-color: hsla(0, 0%, 0%);
+  font-weight: bold;
+}
+.admin table tr{
+    background-color: rgba(128, 128, 128, 0.477);
+}
+.admin form{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-end;
+}
+.admin label{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.admin .dupe{
+    background-color:rgba(255, 255, 255, 0.56);
+    border: none;
+    border-radius: 6px;
+    padding: 4px 12px;
+    align-self: center;
+}
+.admin  input,.admin select {
+  margin-bottom: 10px;
+  background-color:rgba(255, 255, 255, 0.56);
+}
+.admin select{
+  width:192px; padding:4px;
+}
+.admin .button{
+    margin-top:2%;
+    /* align-self:center */
+    transform: translateX(-60px);
+    font-size: 1rem;
+    padding:8px 18px;
+    color:black;
+    background-color: aqua;
+    border: none;
+    border-radius: 6px;
+}
+.admin button:hover{
+    cursor: pointer;
+}
+footer{
+    position: relative;
+    border-bottom: 1px solid #0f0f0f;
+}
+
+

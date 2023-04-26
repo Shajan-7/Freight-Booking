@@ -1,0 +1,79 @@
+<%- include("partials/header"); -%>
+  <link rel="stylesheet" href="bill.css">
+
+  <section class="details">
+
+    <div class="holder">
+      <h3 class="title">Order Bill</h3>
+      <div class="container">
+        <div class="set">
+          <div class="box">
+            <h4>Your Details</h4>
+            <p><span>Name</span> : <%=docs.name %>
+            </p>
+            <p><span> Industry name</span> : <%=docs.profilename %>
+            </p>
+            <p><span>Your Email</span> : <%=docs.email %>
+            </p>
+            <p><span>Phone.no</span> : <%=docs.phone %>
+            </p>
+          </div>
+          <div class="box">
+            <h4>Booking Details</h4>
+            <p><span>From </span> : <%= docs1.pickup %>
+            </p>
+            <p><span>To </span> : <%= docs1.drop %>
+            </p>
+            <p><span>Total Distance</span> : <%= docs1.distance %> kms</p>
+            <p><span>Weight</span> : <%= docs1.ton %> tonnes</p>
+          </div>
+
+        </div>
+        <div class="set">
+          <div class="box">
+            <h4>Truck Details</h4>
+            <p>
+              <span>Truck Name </span> : <%= docs1.truckname %>
+            </p>
+            <p>
+              <span>Truck No </span> : <%= docs1.truckno %>
+            </p>
+            <p>
+              <span>Driver Name </span> : <%= docs1.drname %>
+            </p>
+            <p>
+              <span>Driver Contact </span> : <%= docs1.drphone %>
+            </p>
+          </div>
+          <div class="box">
+            <h4>Bill Details</h4>
+            <p><span>Price Type</span> : ₹<%= docs1.price %>
+                <%= docs1.ptype %>
+            </p>
+            <p><span>Amount</span> : ₹<%= docs1.amount %>
+            </p>
+            <p><span>GST</span> : ₹<%= gst %>
+            </p>
+            <p><span>Total Amount</span> : ₹<%= docs1.totalamount %>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <div>
+          <button class="can" id="cancel-btn">Okay</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    const cancelBtn = document.getElementById('cancel-btn');
+    cancelBtn.addEventListener('click', (event) => {
+      event.preventDefault();
+      window.history.back();
+    });
+
+  </script>
+
+
+  <%- include("partials/footer"); -%>

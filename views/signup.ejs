@@ -1,0 +1,45 @@
+<!-- Signup page -->
+<!-- Completed -->
+
+<%- include("partials/header"); -%>
+    <link rel="stylesheet" href="signup.css">
+    
+    <section class="signup">
+        <div class="signup-page">
+            <h5 class="signup-alert">
+                <%= err%>
+            </h5>
+            <h2 class="signup-center">Signup</h2>
+            
+            <form method="post" action="/signup">
+                <div> <label>Name : </label>
+                    <input type="text" name="name" required />
+                </div>
+                <div><label>Email : </label>
+                    <input type="email" name="email" required />
+                </div>
+                <div><label>Phone : </label>
+                    <input type="tel" name="phone" pattern="[6-9]{1}[0-9]{9}" required>
+                </div>
+                <div><label>Username : </label>
+                    <input type="text" name="username" required />
+                </div>
+                <div><label>Industry name : </label>
+                <input type="text" name="profilename" required />
+                <div><label>Password : </label>
+                    <input type="password" name="password" required />
+                </div>
+                <div><label>Confirm Password : </label>
+                    <input type="password" name="currentpassword" />
+                </div>
+                <div class="signup-center">
+                    <input type="submit" value="Sign Up" /></div>
+            </form>
+
+            <p class="signup-center">Already a user? </p>
+            <div class="signup-center">
+                <a href="login"><button type="button">Login</button> </a>
+            </div>
+        </div>
+    </section>
+    <%- include("partials/footer"); -%>

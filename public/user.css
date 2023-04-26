@@ -1,0 +1,106 @@
+.user{
+ font-family: Arial, Helvetica, sans-serif;
+ background: linear-gradient(to top left, #00FFFF, #00CED1, #1E90FF, #0101bb);
+
+}
+.user-top{
+    background-image:url('imgs/profile-half.jpg') ;
+    background-size: cover;
+}
+.user h5{
+    color:white;
+    padding-top:2%;
+    padding-left:2%;
+    font-size: 1rem;   
+    margin-bottom:none;
+}
+.user h2{
+    color:white;
+    margin-top: none;
+    padding-top:2%;
+    padding-left: 2%;
+    font-size: 2.5rem;
+    margin-bottom: 2.5%;
+}
+.user h3{
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.user .holder{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.user .set {   
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width:36vw;
+    max-width:42vw;
+    min-height:42vh;
+    margin: 5% 3%;
+    background-color:rgba(193, 232, 249, 0.705);
+
+    border-radius: 4px;
+    margin-left: 6%;   
+}
+.user .set .data{ 
+    color:white;
+    margin:5px;
+    padding:10px;
+    color:rgb(60, 75, 80);
+    border-bottom:0.8px solid grey;
+}
+ .holder .set .none{
+    border:none
+}
+.user .set .special{
+    font-size: 1.3rem;
+    font-weight: 800;
+
+    justify-content: center;
+    align-self:center;
+    text-align: center; 
+
+    background-color: #1d3557;
+    color:white;
+    border:none;
+    width:100%;
+    height:100%; 
+
+    margin-top: 0; 
+    padding-top:25px;
+    margin-bottom: 0;
+    padding-bottom:15px;
+
+}
+.user .data .space{
+    display: inline-block;
+    min-width:45%;
+    text-align:left;
+    margin: 0 10%;
+}
+.user button{
+    cursor: pointer;
+    /* margin:1%; */
+    padding: 2% 5%;
+    background-color: #a8dadc;
+    color:black;
+    border:none;
+    border-radius: 6px;
+    font-size: 1.1rem;;
+}
+.user .nill{
+    text-align: center;
+    font-size: 1.1rem;
+    color:#1d3557;
+    font-weight:bolder;
+    justify-content: center;
+}
+footer{
+    position: relative;
+    border-bottom: 1px solid rgb(30, 30, 30);
+}
